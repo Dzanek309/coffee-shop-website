@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <!-- <script src="js/script.js" defer></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -38,7 +38,7 @@
         </nav>
         <img class="header__background-decoration-img" src="img/header-background-decoration-img.svg" alt="">
         <img class="header__decoration-img" src="img/decoration-img.svg" alt="">
-        <div class="header__text wrapper wrapper-column">
+        <div class="header__text wrapper wrapper--column">
             <h1 class="header__title">Awaken to Golden<br>Flavors</h1>
             <h3 class="header__desc">
                 Discover the richness of premium, ethically sourced coffee. Carefully roasted to<br>
@@ -48,59 +48,162 @@
         </div>
     </header>
     <main>
-        <section class="products">
-            <div class="product-card">
-                <img class="product-card__img" src="https://placehold.co/200" alt="">
-                <h4 class="product-card__title">LOREM IPSUM</h4>
-                <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim quis
-                    reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+        <section class="products wrapper wrapper--row">
+            <div class="wrapper wrapper--row">
+                <div class="product-card wrapper wrapper--column">
+                    <img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <h4 class="product-card__title">LOREM IPSUM</h4>
+                    <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
+                        quis
+                        reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                </div>
+                <div class="product-card wrapper wrapper--column">
+                    <img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <h4 class="product-card__title">LOREM IPSUM</h4>
+                    <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
+                        quis
+                        reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                </div>
             </div>
-            <div class="product-card">
-                <img class="product-card__img" src="https://placehold.co/200" alt="">
-                <h4 class="product-card__title">LOREM IPSUM</h4>
-                <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim quis
-                    reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
-            </div>
-            <div class="product-card">
-                <img class="product-card__img" src="https://placehold.co/200" alt="">
-                <h4 class="product-card__title">LOREM IPSUM</h4>
-                <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim quis
-                    reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
-            </div>
-            <div class="product-card">
-                <img class="product-card__img" src="https://placehold.co/200" alt="">
-                <h4 class="product-card__title">LOREM IPSUM</h4>
-                <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim quis
-                    reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+            <div class="wrapper wrapper--row">
+                <div class="product-card wrapper wrapper--column">
+                    <img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <h4 class="product-card__title">LOREM IPSUM</h4>
+                    <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
+                        quis
+                        reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                </div>
+                <div class="product-card wrapper wrapper--column">
+                    <img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <h4 class="product-card__title">LOREM IPSUM</h4>
+                    <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
+                        quis
+                        reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                </div>
             </div>
         </section>
         <section class="opinions">
+            <img class="divider" src="img/divider.svg" alt="">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide"><img class="product-card__img" src="https://placehold.co/200" alt="">
+                    <div class="swiper-slide">
+                        <div class="opinion-card">
+                            <div class="wrapper wrapper--row">
+                                <img class="opinion-card__img" src="https://placehold.co/200" alt="">
+                                <div>
+                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
+                                    <p>RATING</p>
+                                </div>
+                            </div>
+                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Harum enim
+                                quis
+                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="history">
-            <img class="product-card__img" src="https://placehold.co/600" alt="">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum ipsa ducimus repellendus cum
-                nesciunt, voluptas magnam beatae laudantium quod aperiam perferendis hic doloribus quasi nam aliquid
-                tempore velit illum!</p>
+        <section class="history wrapper wrapper--row">
+            <img class="history__img" src="https://placehold.co/600" alt="">
+            <div>
+                <h2 class="history__title">Lorem Ipsum</h2>
+                <p class="history__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum ipsa
+                    ducimus repellendus cum
+                    nesciunt, voluptas magnam beatae laudantium quod aperiam perferendis hic doloribus quasi nam aliquid
+                    tempore velit illum!</p>
+            </div>
         </section>
         <section class="newsletter">
             <div class="wrapper wrapper--column">
@@ -116,7 +219,7 @@
             </div>
         </section>
         <section class="locations">
-            <!-- <div id="map"></div> -->
+            <div id="map"></div>
         </section>
     </main>
     <footer class="footer">
