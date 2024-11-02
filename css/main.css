@@ -1,0 +1,134 @@
+html,
+body {
+  height: 1000px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+  --secondary-color: green;
+  --third-color: blue;
+}
+
+/* -- HEADER --- */
+.header {
+  width: 100%;
+  height: 70%;
+  margin-top: 70px;
+  background-color: lightsalmon;
+}
+.header__title {
+  font-size: 90px;
+  margin: 0;
+}
+.header__text {
+  padding: 50px 0px 0px 50px;
+}
+.header__decoration-img {
+  position: absolute;
+  height: 500px;
+  top: 150px;
+  right: 300px;
+  border-radius: 50%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.header__background-decoration-img {
+  height: 100%;
+  float: right;
+}
+
+/* --- NAV --- */
+.nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.nav__logo {
+  align-items: center;
+}
+.nav__logo-website {
+  height: 60px;
+}
+.nav__logo-social-media {
+  height: 30px;
+}
+.nav__logo-text {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px 10px 0px 10px;
+  padding: 0;
+  font-size: 30px;
+}
+
+/* --- LINK --- */
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.link--nav {
+  border-left: 1px solid black;
+  padding: 30px 30px 10px 30px;
+  font-size: 20px;
+  height: 70px;
+}
+.link--header {
+  font-size: 25px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: rgb(243, 133, 89);
+}
+.link:hover {
+  filter: brightness(1.5);
+}
+
+/* --- WRAPPER --- */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper--column {
+  flex-direction: column;
+}
+.wrapper--row {
+  flex-direction: row;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#map {
+  height: 300px;
+}
+
+/*# sourceMappingURL=main.css.map */
