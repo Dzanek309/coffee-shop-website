@@ -20,18 +20,26 @@ body {
 /* -- HEADER --- */
 .header {
   width: 100%;
-  height: 70%;
+  min-height: 70%;
   margin-top: 60px;
   background-color: #FFB38E;
   overflow: hidden;
   position: relative;
 }
 .header__title {
+  color: brown;
   font-size: 90px;
   margin: 0;
 }
+.header__desc {
+  background-color: white;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 500px;
+}
 .header__text {
-  padding: 50px 0px 0px 50px;
+  padding: 50px;
   position: relative;
   z-index: 2;
 }
@@ -335,6 +343,16 @@ body {
 @media only screen and (max-width: 1046px) {
   .nav__social-media-wrapper {
     display: none;
+  }
+  .header__decoration-img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .header__decoration-img {
+    filter: blur(5px);
   }
 }
 
