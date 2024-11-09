@@ -18,7 +18,7 @@ body
 .header
     width: 100%
     height: 70%
-    margin-top: 70px
+    margin-top: 60px
     background-color: #FFB38E
     overflow: hidden
     position: relative
@@ -46,25 +46,31 @@ body
     position: fixed
     z-index: 999
     top: 0
-    height: 70px
+    height: 60px
     width: 100%
-    padding: 5px
     justify-content: space-between
     align-items: center
     background-color: white
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px
     &__logo
         align-items: center
+        padding: 5px
     &__logo-website
-        height: 60px
+        height: 50px
     &__logo-social-media
-        height: 30px
+        height: 40px
+        padding: 5px
     &__logo-text
         color: black
         font-family: Georgia, 'Times New Roman', Times, serif
         margin: 0px 10px 0px 10px
         padding: 0
         font-size: 30px
+        white-space: nowrap
+    &__link-wrapper-mobile
+        flex-direction: column
+        width: 100%
+        display: none
 
 /* --- PRODUCT-CARD ---*/
 .product-section
@@ -182,29 +188,42 @@ body
 .link
     text-decoration: none
     color: black
-    padding: 10px
     &--nav
-        border-left: 1px solid black
+        // border-left: 1px solid black
+        background-color: whitesmoke
         padding: 30px 30px 10px 30px
-        font-size: 20px
+        font-size: 16px
         height: 70px
+        &:hover
+            color: #c6453f
     &--header
         font-size: 25px
         width: 150px
+        padding: 10px
         text-align: center
         border-radius: 20px
         color: white
         font-family: Georgia, 'Times New Roman', Times, serif
         font-weight: bold
         background-color: #c6453f
-    &:hover
-        filter: brightness(1.5)
+        &:hover
+            filter: brightness(1.5)
+    &--mobile
+        color: white
+        background-color: black
+        height: 100%
+        padding: 10px
+        align-content: center
+        text-align: center
+        font-size: 20px
+        font-weight: 900
+        cursor: pointer
+        display: none
 
 /* --- WRAPPER --- */
 .wrapper
     display: flex
     flex-wrap: wrap
-    gap: 10px
     &--column
         flex-direction: column
 
@@ -245,3 +264,28 @@ body
         align-items: center
 #map
     height: 300px
+
+/* --- VISIBLE --- */
+
+.visible
+    &--flex
+        display: flex
+    &--block
+        display: block
+
+/* --- MEDIA QUERIES --- */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) ...
+
+@media only screen and (max-width: 866px)
+    .nav
+        &__link-wrapper
+            display: none
+    .link
+        &--mobile
+            display: block
+
+@media only screen and (max-width: 1046px)
+    .nav
+        &__social-media-wrapper
+            display: none
