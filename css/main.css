@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 70%;
   margin-top: 70px;
-  background-color: lightsalmon;
+  background-color: #FFB38E;
   overflow: hidden;
   position: relative;
 }
@@ -81,14 +81,15 @@ body {
 }
 
 /* --- PRODUCT-CARD ---*/
-.products {
+.product-section {
   justify-content: space-around;
-  margin: 20px;
+  padding-top: 20px;
   flex-wrap: wrap;
+  background-color: white;
 }
 
 .product-card {
-  background-color: red;
+  background-color: #FFCF9D;
   height: auto;
   width: 350px;
   padding: 25px;
@@ -125,10 +126,14 @@ body {
 }
 
 /* --- OPINIONS --- */
+.opinion-section {
+  background-color: #e9c6af;
+}
+
 .opinion-card {
   background-color: green;
   height: 300px;
-  width: 500px;
+  width: auto;
   padding: 20px;
   border-radius: 25px;
 }
@@ -146,8 +151,12 @@ body {
 }
 
 /* --- HISTORY --- */
+.history-section {
+  padding: 25px;
+  background-color: #e9c6af;
+}
+
 .history {
-  margin: 25px;
   background-color: yellow;
 }
 .history__img {
@@ -163,11 +172,13 @@ body {
 }
 
 /* --- NEWSLETTER --- */
+.newsletter-section {
+  background-color: #e9c6af;
+  padding: 30px 30px 30px 30px;
+}
+
 .newsletter {
   padding: 80px;
-  margin: 30px 30px 30px 30px;
-  text-align: center;
-  justify-items: center;
   background-color: var(--main-color);
   color: var(--third--color);
   /* color: white; */
@@ -199,7 +210,7 @@ body {
 
 /* --- LOCATIONS --- */
 .locations {
-  background-color: purple;
+  background-color: #FFB26F;
 }
 
 /* --- LINK --- */
@@ -222,7 +233,7 @@ body {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  background-color: rgb(243, 133, 89);
+  background-color: #c6453f;
 }
 .link:hover {
   filter: brightness(1.5);
@@ -247,12 +258,16 @@ body {
 .wrapper--nowrap {
   flex-wrap: nowrap;
 }
+.wrapper--center {
+  justify-content: center;
+  align-items: center;
+}
 
 /* --- FOOTER --- */
 .footer {
   width: 100%;
   height: 50px;
-  background-color: orange;
+  background-color: #DE8F5F;
 }
 
 /* --- DIVIDER --- */
@@ -268,7 +283,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color: #e9c6af;
   display: flex;
   justify-content: center;
   align-items: center;
