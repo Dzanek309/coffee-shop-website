@@ -20,22 +20,27 @@ body
     height: 70%
     margin-top: 70px
     background-color: lightsalmon
+    overflow: hidden
+    position: relative
     &__title
         font-size: 90px
         margin: 0
     &__text
         padding: 50px 0px 0px 50px
-        // padding-left: 50px
+        position: relative
+        z-index: 2
     &__decoration-img
         position: absolute
         height: 500px
-        top: 150px
+        top: 100px
         right: 150px
         border-radius: 50%
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px
     &__background-decoration-img
+        position: absolute
         height: 100%
-        float: right
+        right: 0
+        bottom: 0
 /* --- NAV --- */
 .nav
     position: fixed
@@ -68,19 +73,33 @@ body
     flex-wrap: wrap
 .product-card
     background-color: red
-    height: 500px
+    height: auto
     width: 350px
-    padding: 20px
-    border-radius: 25px
+    padding: 25px
+    border-radius: 20px
     justify-items: center
     &__img
         border-radius: 25px
+        align-self: center
     &__title
         font-size: 30px
         padding: 0
         margin: 20px 0px
     &__desc
         margin: 0px
+    &--small
+        width: 250px
+.tag
+    &--bestseller::after
+        content: 'bestseller'
+        display: block
+        color: yellow
+        font-size: 16px
+    &--new::after
+        content: 'new'
+        display: block
+        color: green
+        font-size: 16px
 
 /* --- OPINIONS --- */
 
@@ -181,6 +200,8 @@ body
 /* --- WRAPPER --- */
 .wrapper
     display: flex
+    flex-wrap: wrap
+    gap: 10px
     &--column
         flex-direction: column
 
@@ -188,6 +209,9 @@ body
         flex-direction: row
     &--break
         flex-basis: 100%
+        height: 0
+    &--nowrap
+        flex-wrap: nowrap
 
 /* --- FOOTER --- */
 
