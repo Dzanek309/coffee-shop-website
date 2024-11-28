@@ -272,7 +272,6 @@ body {
 /* --- WRAPPER --- */
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
 }
 .wrapper--column {
   flex-direction: column;
@@ -333,6 +332,9 @@ body {
 /* --- MEDIA QUERIES --- */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 866px) {
+  .nav {
+    display: block;
+  }
   .nav__link-wrapper {
     display: none;
   }
