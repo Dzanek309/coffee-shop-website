@@ -17,15 +17,18 @@ body
 
 .header
     width: 100%
-    min-height: 70%
+    min-height: 60%
     margin-top: 60px
-    background-image: url(../img/header-background.jpg)
+    // background-image: url(../img/header-background.jpg)
+    // background-image: url(../img/test2.jpg)
+    // background-image: url(../img/test1.png)
+    background-color: rgb(233, 198, 175)
     overflow: hidden
     position: relative
     &__title
         // color: peachpuff
         color: white
-        font-size: 120px
+        font-size: 104px
         margin: 0
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
     &__desc
@@ -40,9 +43,9 @@ body
         z-index: 2
     &__decoration-img
         position: absolute
-        height: 600px
-        top: 150px
-        right: 20px
+        height: 300px
+        top: 50px
+        right: 100px
 /* --- NAV --- */
 .nav
     position: fixed
@@ -74,11 +77,31 @@ body
         width: 100%
         display: none
 
+/* --- SECTIONS --- /*
+
+.section
+    position: relative
+    &__title
+        font-size: 60px
+        text-align: center
+        margin: 0
+        padding: 10px
+        color: white
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15)
+    &-product
+        justify-content: space-evenly
+        background-color: white
+        background-color: rgb(116, 89, 81)
+    &-opinion
+        background-color: #e9c6af
+    &-history
+        padding: 25px
+        background-color: #e9c6af
+    &-newsletter
+        background-color: #e9c6af
+        padding: 30px 30px 30px 30px
+
 /* --- PRODUCT-CARD ---*/
-.product-section
-    justify-content: space-evenly
-    padding-top: 20px
-    background-color: white
 .product-card
     background-color: #FFCF9D
     height: auto
@@ -111,30 +134,37 @@ body
         font-size: 16px
 
 /* --- OPINIONS --- */
-
-.opinion-section
-    background-color: #e9c6af
 .opinion-card
-    background-color: green
-    height: 300px
+    background-color: #6d4a25
+    min-height: 200px
+    min-width: 150px
     width: auto
-    padding: 20px
+    padding: 15px
     border-radius: 25px
     &__img
-        height: 164px
+        height: 100px
+        width: 100px
         border-radius: 25px
     &__title
-        font-size: 30px
+        font-size: 16px
+        color: white
         padding: 0
         margin: 20px 0px
+    &__personal-info
+        padding: 10px
+        align-items: center
     &__desc
         margin: 0px
+        padding: 10px
+        background-color: #ad7a43
+        border-radius: 20px
+        color: black
+    &__rating
+        justify-content: center
+        &-img
+            height: 26px
 
 /* --- HISTORY --- */
-
-.history-section
-    padding: 25px
-    background-color: #e9c6af
 .history
     background-color: yellow
     &__img
@@ -147,10 +177,6 @@ body
         margin: 25px
 
 /* --- NEWSLETTER --- */
-
-.newsletter-section
-    background-color: #e9c6af
-    padding: 30px 30px 30px 30px
 .newsletter
     padding: 80px
     background-color: var(--main-color)
@@ -197,7 +223,7 @@ body
         font-size: 16px
         height: 70px
         &:hover
-            color: orange
+            color: brown
     &--header
         font-size: 25px
         width: 150px
@@ -206,7 +232,7 @@ body
         margin-top: 50px
         color: white
         font-weight: bold
-        background-color: orange
+        background-color: brown
         &:hover
             filter: brightness(1.5)
     &--mobile
@@ -227,9 +253,14 @@ body
     // flex-wrap: wrap
     &--column
         flex-direction: column
-
+    &--column-wrap
+        flex-direction: column
+        flex-wrap: wrap
     &--row
         flex-direction: row
+    &--row-wrap
+        flex-direction: row
+        flex-wrap: wrap
     &--break
         flex-basis: 100%
         height: 0
@@ -250,6 +281,12 @@ body
 
 .divider
     width: 100%
+    &--absolute-bottom
+        position: absolute
+        bottom: 0
+    &--absolute-top
+        position: absolute
+        top: 0
 
 /* --- SWIPER --- */
 
@@ -263,6 +300,13 @@ body
         display: flex
         justify-content: center
         align-items: center
+    &-pagination
+        position: static !important
+        margin: 20px 0px
+        &-bullet
+            background-color: brown !important
+            width: 50px !important
+            border-radius: 0px !important
 #map
     height: 300px
 
@@ -297,17 +341,27 @@ body
             position: absolute
             top: 50%
             transform: translate(0%,-50%)
+    .opinion-card
+        &__personal-info
+            flex-direction: column
+        &__rating
+            font-size: 12px
 @media only screen and (max-width: 1046px)
     .nav
         &__social-media-wrapper
             display: none
     .header
-        text-align: center
         &__decoration-img
             top: 50%
             left: 50%
             transform: translate(-50%,-50%)
             display: none
+        &__title
+            text-align: center
     .link
         &--header
             align-self: center
+    .opinion-card
+        flex-direction: column
+        &__desc
+            display: none

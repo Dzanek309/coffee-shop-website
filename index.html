@@ -48,30 +48,33 @@
                 <a class="link link--nav" href="#">Contact</a>
             </div>
         </nav>
-        <img class="header__decoration-img" src="img/decoration-img.png" alt="">
+        <!-- <img class="header__decoration-img" src="img/test.png" alt=""> -->
         <div class="header__text wrapper wrapper--column">
             <h1 class="header__title">Awaken to Golden<br>Flavors</h1>
             <a class="link link--header" href="#">See More</a>
         </div>
+        <img class="divider divider--absolute-bottom" src="img/divider-dark.svg" alt="">
     </header>
     <main>
-        <section class="product-section wrapper wrapper--row">
-            <div class="wrapper wrapper--row wrapper--center">
-                <div class="product-card product-card--small wrapper wrapper--column">
+        <section class="section section-product wrapper wrapper--row-wrap">
+            <h1 class="section__title">PRODUCTS</h1>
+            <div class="wrapper--break"></div>
+            <div class="wrapper wrapper--row-wrap wrapper--center">
+                <div class="product-card product-card--small wrapper wrapper--column-wrap">
                     <img class="product-card__img" src="https://placehold.co/200" alt="">
                     <h1 class="product-card__title tag--bestseller">LOREM IPSUM</h1>
                     <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
                         quis
                         reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
                 </div>
-                <div class="product-card product-card--small wrapper wrapper--column">
+                <div class="product-card product-card--small wrapper wrapper--column-wrap">
                     <img class="product-card__img" src="https://placehold.co/200" alt="">
                     <h1 class="product-card__title tag--bestseller">LOREM IPSUM</h1>
                     <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
                         quis
                         reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
                 </div>
-                <div class="product-card product-card--small wrapper wrapper--column">
+                <div class="product-card product-card--small wrapper wrapper--column-wrap">
                     <img class="product-card__img" src="https://placehold.co/200" alt="">
                     <h1 class="product-card__title tag--bestseller">LOREM IPSUM</h1>
                     <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
@@ -79,15 +82,15 @@
                         reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
                 </div>
             </div>
-            <div class="wrapper wrapper--row wrapper--center">
-                <div class="product-card wrapper wrapper--column">
+            <div class="wrapper wrapper--row-wrap wrapper--center">
+                <div class="product-card wrapper wrapper--column-wrap">
                     <img class="product-card__img" src="https://placehold.co/300" alt="">
                     <h1 class="product-card__title tag--new">LOREM IPSUM</h1>
                     <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
                         quis
                         reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
                 </div>
-                <div class="product-card wrapper wrapper--column">
+                <div class="product-card wrapper wrapper--column-wrap">
                     <img class="product-card__img" src="https://placehold.co/300" alt="">
                     <h1 class="product-card__title  tag--new">LOREM IPSUM</h1>
                     <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim
@@ -95,121 +98,143 @@
                         reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
                 </div>
             </div>
-            <img class="divider" src="img/divider.svg" alt="">
+            <img class="divider divider--bottom" src="img/divider.svg" alt="">
         </section>
-        <section class="opinion-section">
+        <section class="section section-opinion">
+            <h1 class="section__title">OPINIONS</h1>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="opinion-card">
-                            <div class="wrapper wrapper--row">
+                        <div class="opinion-card wrapper wrapper--row">
+                            <div class="opinion-card__personal-info wrapper wrapper--column">
                                 <img class="opinion-card__img" src="https://placehold.co/200" alt="">
-                                <div>
-                                    <h4 class="opinion-card__title">LOREM IPSUM</h4>
-                                    <p>RATING</p>
+                                <h4 class="opinion-card__title">@loremipsum</h4>
+                                <div class="opinion-card__rating wrapper wrapper--row">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="1">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="2">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="3">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="4">
+                                    <img class="opinion-card__rating-img" src="img/coffee-full.png" alt="5">
                                 </div>
                             </div>
-                            <p class="opinion-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Harum enim
-                                quis
-                                reprehenderit quisquam voluptatum, laboriosam possimus, velit eaque fugit.</p>
+                            <p class="opinion-card__desc">I came in a zombie, and I left a functioning adult with a
+                                clear sense of purpose. Well, at least until the caffeine wore
+                                off</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="history-section">
+        <section class="section section-history">
             <div class="history wrapper wrapper--row wrapper--nowrap">
                 <img class=" history__img" src="https://placehold.co/600" alt="">
                 <div>
@@ -222,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="newsletter-section">
+        <section class="section section-newsletter">
             <div class="newsletter wrapper wrapper--column wrapper--center">
                 <a class="newsletter__small-title link" href="#">newsletter</a>
                 <h1 class="newsletter__title">Don't Miss Our Daily Updates</h1>
