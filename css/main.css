@@ -110,7 +110,7 @@ body {
 }
 .section-history {
   padding: 25px;
-  background-color: #e9c6af;
+  background-color: #cf9f7f;
 }
 .section-newsletter {
   background-color: #e9c6af;
@@ -195,17 +195,14 @@ body {
 }
 
 /* --- HISTORY --- */
-.history {
-  background-color: yellow;
-}
-.history__img {
+.history-card__img {
   border-radius: 25px;
 }
-.history__title {
+.history-card__title {
   font-size: 50px;
   margin: 25px;
 }
-.history__desc {
+.history-card__desc {
   font-size: 25px;
   margin: 25px;
 }
@@ -425,6 +422,9 @@ body {
   }
   .opinion-card__desc {
     display: none;
+  }
+  .history-card {
+    flex-direction: column;
   }
 }
 
