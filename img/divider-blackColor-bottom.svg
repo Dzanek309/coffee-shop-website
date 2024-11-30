@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="135.21805mm"
-   height="14.923491mm"
-   viewBox="0 0 135.21805 14.923491"
+   width="136.77631mm"
+   height="8.1495895mm"
+   viewBox="0 0 136.77631 8.1495895"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -27,9 +27,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.4823793"
-     inkscape:cx="315.03408"
-     inkscape:cy="126.48585"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="97.309631"
+     inkscape:cy="-17.649296"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -59,16 +59,16 @@
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-9.3635974,-72.131273)">
+     transform="translate(-8.8853226,-81.990348)">
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 9.1111807,86.392818 C 31.660646,84.247253 54.209873,82.101711 76.927632,82.122793 c 22.71776,0.02108 45.603088,2.20865 68.488578,4.396234"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.272327px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 6.2632228,88.891616 C 30.151912,86.746051 54.040346,84.600509 78.107319,84.621591 c 24.066971,0.02108 48.311471,2.20865 72.556141,4.396234"
        id="path1317"
        inkscape:path-effect="#path-effect1319"
-       inkscape:original-d="M 9.1111807,86.392818 C 31.660673,84.247541 54.2099,82.101998 76.758864,79.956192 c 22.886505,2.18792 45.771836,4.375487 68.657346,6.562835" />
+       inkscape:original-d="M 6.2632228,88.891616 C 30.151938,86.746339 54.040372,84.600796 77.928526,82.45499 c 24.245744,2.18792 48.490244,4.375487 72.734934,6.562835" />
     <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 145.46083,86.429784 v 0 l 0.0631,1.577604 L 9.0295937,87.754971 9.1558021,86.303575"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.272327px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 150.71073,88.928582 v 0 l 0.0668,1.577604 L 6.1767903,90.253769 6.3104942,88.802373"
        id="path1321" />
   </g>
 </svg>

@@ -102,8 +102,10 @@ body
         padding: 25px
         background-color: #cf9f7f
     &-newsletter
-        background-color: #e9c6af
-        padding: 30px 30px 30px 30px
+        background-color: #cf9f7f
+        padding: 30px 0px 0px 0px
+        display: flex
+        flex-direction: column
     &-locations
         background-color: #FFB26F
         display: flex
@@ -111,13 +113,16 @@ body
 
 /* --- PRODUCT-CARD ---*/
 .product-card
-    background-color: #FFCF9D
+    background-color: #ab855d
     height: auto
     width: 350px
+    height: 580px
     padding: 25px
-    margin: 5px
+    margin: 15px
     border-radius: 20px
     justify-items: center
+    // box-shadow: rgba(0, 0, 0, 0.4) 0px 7px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 9px, rgba(0, 0, 0, 0.2) 0px 5px 0px inset
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 1px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -7px 0px inset
     &__img
         border-radius: 25px
         align-self: center
@@ -125,34 +130,38 @@ body
         font-size: 30px
         padding: 0
         margin: 20px 0px
+        color: white
     &__desc
         margin: 0px
     &--small
         width: 250px
+        height: 500px
 .tag
     &--bestseller::after
-        content: 'bestseller'
+        content: '#bestseller'
         display: block
-        color: yellow
-        font-size: 16px
+        color: #af34eb
+        font-size: 18px
     &--new::after
-        content: 'new'
+        content: '#new'
         display: block
-        color: green
-        font-size: 16px
+        color: springgreen
+        font-size: 18px
 
 /* --- OPINIONS --- */
 .opinion-card
-    background-color: #6d4a25
+    background-color: #ab855d
     min-height: 200px
     min-width: 150px
     width: auto
     padding: 15px
     border-radius: 25px
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 1px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -7px 0px inset
     &__img
         height: 100px
         width: 100px
         border-radius: 25px
+        box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 1px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -7px 0px inset
     &__title
         font-size: 16px
         color: white
@@ -164,9 +173,19 @@ body
     &__desc
         margin: 0px
         padding: 10px
-        background-color: #ad7a43
+        width: 100%
+        background-color: #c9ab8a
+        box-shadow: rgba(0, 0, 0, 0.4) -5px 0px 0px, rgba(0, 0, 0, 0.3) 5px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset
+        align-content: center
         border-radius: 20px
         color: black
+    &__desc::before
+        position: absolute
+        bottom: 10px
+        right: 30px
+        content: '...'
+        color: black
+        font-size: 40px
     &__rating
         justify-content: center
         &-img
@@ -175,17 +194,24 @@ body
 /* --- HISTORY --- */
 .history-card
     &__img
-        border-radius: 25px
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
     &__title
         font-size: 50px
         margin: 25px
     &__desc
         font-size: 25px
-        margin: 25px
+        height: 600px
+        background-color: #e9c6af
+        // border-radius: 20px
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+        padding: 20px
+        margin: 0
 
 /* --- NEWSLETTER --- */
 .newsletter-card
-    padding: 50px
+    padding: 20px
     background-color: #6d4a25
     color: black
 
@@ -253,6 +279,10 @@ body
         font-weight: 900
         cursor: pointer
         display: none
+    &--footer
+        color: white
+        // line-height: 50px
+        margin: 10px 0px
 
 /* --- WRAPPER --- */
 .wrapper
@@ -280,8 +310,10 @@ body
 /* --- FOOTER --- */
 
 .footer
+    justify-content: space-around
     width: 100%
-    height: 50px
+    padding: 20px
+    height: auto
     background-color: black
     color: white
 
@@ -376,5 +408,9 @@ body
         flex-direction: column
         &__desc
             display: none
+@media only screen and (max-width: 1080px)
     .history-card
         flex-direction: column
+        &__desc,&__img
+            border-radius: 20px
+            margin: 10px
