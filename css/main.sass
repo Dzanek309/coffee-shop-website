@@ -1,3 +1,5 @@
+html
+    overflow-x: hidden
 html,
 body
     height: 1000px
@@ -94,12 +96,18 @@ body
         background-color: rgb(116, 89, 81)
     &-opinion
         background-color: #e9c6af
+        display: flex
+        flex-direction: column
     &-history
         padding: 25px
         background-color: #cf9f7f
     &-newsletter
         background-color: #e9c6af
         padding: 30px 30px 30px 30px
+    &-locations
+        background-color: #FFB26F
+        display: flex
+        flex-direction: column
 
 /* --- PRODUCT-CARD ---*/
 .product-card
@@ -210,8 +218,6 @@ body
 
 /* --- LOCATIONS --- */
 
-.locations
-    background-color: #FFB26F
 /* --- LINK --- */
 
 .link
@@ -276,7 +282,8 @@ body
 .footer
     width: 100%
     height: 50px
-    background-color: #DE8F5F
+    background-color: black
+    color: white
 
 /* --- DIVIDER --- */
 

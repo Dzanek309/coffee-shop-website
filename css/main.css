@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   height: 1000px;
@@ -107,6 +111,8 @@ body {
 }
 .section-opinion {
   background-color: #e9c6af;
+  display: flex;
+  flex-direction: column;
 }
 .section-history {
   padding: 25px;
@@ -115,6 +121,11 @@ body {
 .section-newsletter {
   background-color: #e9c6af;
   padding: 30px 30px 30px 30px;
+}
+.section-locations {
+  background-color: #FFB26F;
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- PRODUCT-CARD ---*/
@@ -244,10 +255,6 @@ body {
 }
 
 /* --- LOCATIONS --- */
-.locations {
-  background-color: #FFB26F;
-}
-
 /* --- LINK --- */
 .link {
   text-decoration: none;
@@ -322,7 +329,8 @@ body {
 .footer {
   width: 100%;
   height: 50px;
-  background-color: #DE8F5F;
+  background-color: black;
+  color: white;
 }
 
 /* --- DIVIDER --- */
