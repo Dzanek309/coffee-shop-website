@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.section-history {
+.section-gallery {
   padding: 25px;
   background-color: #cf9f7f;
 }
@@ -177,7 +177,7 @@ body {
 
 /* --- OPINIONS --- */
 .opinion-card {
-  background-color: whitesmoke;
+  background-color: #fff7e6;
   min-height: 200px;
   min-width: 150px;
   width: auto;
@@ -228,30 +228,30 @@ body {
   height: 26px;
 }
 
-/* --- HISTORY --- */
-.history-card {
+/* --- GALLERY --- */
+.gallery-card {
   gap: 60px;
   justify-content: center;
 }
-.history-card__gallery {
+.gallery-card__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   justify-items: center;
 }
-.history-card__img {
+.gallery-card__img {
   height: 300px;
   width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 20px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -7px 0px inset;
   border-radius: 8px;
 }
-.history-card__title {
+.gallery-card__title {
   font-size: 50px;
   margin: 25px;
 }
-.history-card__desc {
+.gallery-card__desc {
   font-size: 25px;
   height: 100%;
   min-height: 620px;
@@ -445,18 +445,18 @@ body {
   .header__title {
     font-size: 60px;
   }
-  .history-card__gallery {
+  .gallery-card__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .history-card__img {
+  .gallery-card__img {
     height: 400px !important;
     width: 400px !important;
   }
 }
 @media only screen and (max-width: 730px) {
-  .history-card__img {
+  .gallery-card__img {
     height: 200px;
     width: 200px;
   }
@@ -513,10 +513,10 @@ body {
   }
 }
 @media only screen and (max-width: 1080px) {
-  .history-card {
+  .gallery-card {
     flex-direction: column;
   }
-  .history-card__desc, .history-card__img {
+  .gallery-card__desc, .gallery-card__img {
     border-radius: 20px;
     margin: 10px;
   }
