@@ -454,6 +454,10 @@ body {
     height: 400px !important;
     width: 400px !important;
   }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 730px) {
   .gallery-card__img {
